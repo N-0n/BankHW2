@@ -15,7 +15,7 @@ function debit(){
         document.getElementById('balance').innerText=balance;
         document.getElementById('amount').value = '';
 
-    } else {
+    } else if(amount>balance) {
         alert('Amount cannot be withdrawn, Insufficient balance!')
     } 
 }
